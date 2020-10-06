@@ -5,7 +5,7 @@ require 'dotenv'
 Dotenv.load
 
 BASE_URL = "https://us1.locationiq.com/v1/search.php"
-LOCATION_IQ_KEY = ENV["LOCATION_IQ_KEY"]
+LOCATION_IQ_KEY = ENV["API_TOKEN"]
 
 def get_location(search_term)
   query_parameters = {
